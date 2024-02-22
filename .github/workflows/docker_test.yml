@@ -20,6 +20,14 @@ jobs:
       
     - name: Run Docker Container
       run: docker run --rm -d -p 53224:53224/udp --name test_container my_image
+
+    - name: Install Python Deps
+      run: pip install pytest
+
+    - name: Run Python Tests
+      run: |
+        cd tools
+        pytest
       
     - name: Stop and Remove Docker Container
       run: |
