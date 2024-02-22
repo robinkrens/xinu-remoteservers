@@ -1,8 +1,9 @@
-name: Docker Test
+name: Read and write test
 
 on:
   push:
     branches:
+      - master
       - rob-dev
 
 jobs:
