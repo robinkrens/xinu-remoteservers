@@ -1,6 +1,6 @@
 # Xinu Remote Servers
 
-[![forthebadge](https://forthebadge.com/images/featured/featured-contains-cat-gifs.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/featured/featured-built-with-love.svg)](https://forthebadge.com)
 
 Xinu's simple and elegant remote disk and file server.
 *Note: the servers are mostly for simple demo and testing purposes. It is by far a secure implementation that you should roll out in the wild. Nonetheless it can serve it's purpose on LAN or small embedded devices. It is easy extendible :)
