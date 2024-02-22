@@ -14,11 +14,15 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Build Docker Image
-      run: docker build -t my_image .
+      run: |
+        cd rfserver 
+        docker build -t my_image .
       
     - name: Run Docker Container
       run: docker run --rm -d -p 53224:53224/udp --name test_container my_image
       
     - name: Stop and Remove Docker Container
-      run: docker stop test_container && docker rm test_container
+      run: |
+        docker stop test_container || true
+        docker rm test_container || true
 
